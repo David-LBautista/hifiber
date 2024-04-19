@@ -629,9 +629,11 @@
             <div class="relative px-4">
                 <div class="absolute h-full border border-dashed border-opacity-20 border-secondary"></div>
                 <div class="flex items-center w-full mb-6 -ml-1.5">
-                    <div class="w-1/12 z-10">
-                        <div class="w-3.5 h-3.5 background-primary rounded-full"></div>
-                    </div>
+                    <div class="flex-shrink-0 mr-2">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#07d915" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                          </div>
                     <div class="w-11/12">
                         <p class="text-sm">Lomas de Córdoba.</p>
                         <p class="text-xs text-gray-500">
@@ -640,25 +642,31 @@
                     </div>
                 </div>
                 <div class="flex items-center w-full my-6 -ml-1.5">
-                    <div class="w-1/12 z-10">
-                        <div class="w-3.5 h-3.5 background-primary rounded-full"></div>
-                    </div>
+                    <div class="flex-shrink-0 mr-2">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#07d915" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                          </div>
                     <div class="w-11/12">
                         <p class="text-sm">Las Concordias.</p>
                     </div>
                 </div>
                 <div class="flex items-center w-full my-6 -ml-1.5">
-                    <div class="w-1/12 z-10">
-                        <div class="w-3.5 h-3.5 background-primary rounded-full"></div>
-                    </div>
+                    <div class="flex-shrink-0 mr-2">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#07d915" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                          </div>
                     <div class="w-11/12">
                         <p class="text-sm">Los Agaves .</p>
                     </div>
                 </div>
                 <div class="flex items-center w-full my-6 -ml-1.5">
-                    <div class="w-1/12 z-10">
-                        <div class="w-3.5 h-3.5 background-primary rounded-full"></div>
-                    </div>
+                    <div class="flex-shrink-0 mr-2">
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#07d915" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                          </div>
                     <div class="w-11/12">
                         <p class="text-sm">Residencial San Juan .</p>
                     </div>
@@ -693,7 +701,9 @@
                             <p class="text-xs text-gray-500">Nogal, Teca, Ébano</p>
                         </div>
                         <div class="w-1/12 z-10">
-                            <div class="w-3.5 h-3.5 background-primary rounded-full"></div>
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#07d915" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
                         </div>
                     </div>
   
@@ -702,7 +712,9 @@
                             <p class="text-sm">Privadas San Pablo.</p>
                         </div>
                         <div class="w-1/12 z-10">
-                            <div class="w-3.5 h-3.5 background-primary rounded-full"></div>
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#07d915" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
                         </div>
                     </div>
   
@@ -711,7 +723,9 @@
                             <p class="text-sm">Rivera de la Morena.</p>
                         </div>
                         <div class="w-1/12 z-10">
-                            <div class="w-3.5 h-3.5 background-primary rounded-full"></div>
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#07d915" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
                         </div>
                     </div>
   
@@ -720,7 +734,9 @@
                             <p class="text-sm">Riviera del Sol.</p>
                         </div>
                         <div class="w-1/12 z-10">
-                            <div class="w-3.5 h-3.5 background-primary rounded-full"></div>
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#07d915" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
                         </div>
                     </div>
   
@@ -729,7 +745,9 @@
                             <p class="text-sm">Hacienda los Tulipanes.</p>
                         </div>
                         <div class="w-1/12 z-10">
-                            <div class="w-3.5 h-3.5 background-primary rounded-full"></div>
+                            <svg class="w-5 h-5 text-green-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#07d915" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
                         </div>
                     </div>
                 </div>
