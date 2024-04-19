@@ -15,4 +15,9 @@ class LandingController extends Controller
     {
         return  view('pages.internet');
     }
+
+    public function fiber()
+    {
+        return view('pages.fiber');
+    }
 }

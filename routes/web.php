@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\LandingController::class, 'index'])->name('landing');
 Route::get('/internet', [\App\Http\Controllers\LandingController::class, 'internet'])->name('landing.internet');
+Route::get('/fiber', [\App\Http\Controllers\LandingController::class, 'fiber'])->name('landing.fiber');
+
 
 Auth::routes();
 

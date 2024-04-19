@@ -61,25 +61,28 @@
 
             <div class="hidden lg:flex lg:gap-x-12">
                 <div class="relative"></div>
-                <a href="#servicios"
+                <a href="#servicios" onclick="window.location.href ='./'; return false;"
                     class="text-sm custom-link font-normal leading-6 text-gray-900 hover:font-extralight">Servicios</a>
-                <a href="#clientes"
+                <a href="#clientes" onclick="window.location.href ='./'; return false;"
                     class="text-sm custom-link font-normal leading-6 text-gray-900 hover:font-extralight">Nuestros
                     clientes</a>
                 <a href="" onclick="window.location.href ='./internet'; return false;"
-                    class="text-sm custom-link font-normal leading-6 text-gray-900 hover:font-extralight">Planes</a>
-                <a href="#galeria"
+                    class="text-sm custom-link font-normal leading-6 text-gray-900 hover:font-extralight">Wireless</a>
+                <a href="" onclick="window.location.href ='./fiber'; return false;"
+                    class="text-sm custom-link font-normal leading-6 text-gray-900 hover:font-extralight">Fibra Optica</a>
+                <a href="#galeria" onclick="window.location.href ='./'; return false;"
                     class="text-sm custom-link font-normal leading-6 text-gray-900 hover:font-extralight">Galeria</a>
 
-                <a href="#cobertura"
+                <a href="#cobertura" onclick="window.location.href ='./'; return false;"
                     class="text-sm custom-link font-semibold leading-6 text-gray-900 border-l border-gray-300 pl-7">Cobertura</a>
             </div>
 
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
                 <div class="bg-black px-6 py-3 text-white text-xs tracking-widest animation-primary">
                     <div class="circle"></div>
-                    <a href="#contacto">CONTACTANOS</a>
+                    <a href="#contacto" onclick="window.location.href ='./'; return false;">CONTACTANOS</a>
                 </div>
+                
             </div>
         </nav>
 
@@ -110,7 +113,9 @@
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-light leading-7 text-gray-900 hover:bg-gray-50">Nuestros
                                 Clientes</a>
                             <a href="#" onclick="window.location.href = 'internet'; return false;"
-                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-light leading-7 text-gray-900 hover:bg-gray-50">Planes</a>
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-light leading-7 text-gray-900 hover:bg-gray-50">Wireless</a>
+                            <a href="#" onclick="window.location.href = 'fiber'; return false;"
+                                class="-mx-3 block rounded-lg px-3 py-2 text-base font-light leading-7 text-gray-900 hover:bg-gray-50">Fibra Optica</a>
                             <a href="#galeria"
                                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-light leading-7 text-gray-900 hover:bg-gray-50">Galeria</a>
 
@@ -130,6 +135,7 @@
     </header>
 
     @yield('content')
+    @yield('fiber')
 
     <div class="section-separator my-12"></div>
 
