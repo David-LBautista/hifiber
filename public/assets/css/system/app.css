@@ -1,0 +1,57 @@
+.btn-group-xs > .btn, .btn-xs {
+  padding: 0.25rem 0.4rem;
+  font-size: 0.875rem;
+  line-height: 0.5;
+  border-radius: 0.2rem;
+}
+
+.btn.btn-icon.btn-xs {
+  font-size: 10px;
+  line-height: 0em;
+  border-radius: 0.1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5em;
+  width: 2.5em;
+}
+
+.dataTables_filter, .dataTables_info {
+  display: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#login-svg-bg {
+  background-image: url("../media/svg/illustrations/login.svg");
+}
+
+a.menu-link.active {
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+}
+
+.auth-body {
+  background-color: #21202b;
+}
+
+.btn.btn-black {
+  color: #f6f6f9;
+  background-color: #454460;
+}

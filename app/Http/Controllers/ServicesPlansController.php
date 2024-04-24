@@ -19,8 +19,9 @@ class ServicesPlansController extends Controller
             'get_cat_type_service_plan',
             'get_cat_type_service'
         ])->get();
+        $title = 'Listado de planes';
 
-        return view('system.service-plans', compact('data'));
+        return view('system.service-plans', compact('data', 'title'));
     }
 
     public function show()
