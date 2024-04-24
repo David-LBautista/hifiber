@@ -23,5 +23,6 @@ class DatabaseSeeder extends Seeder
         $this->call(CatTypesServicePlansSeeder::class);
         $this->call(CatTypesEquipmentSeeder::class);
         $this->call(CatTypesServicesSeeder::class);
+        $this->call(ServicesPlansSeeder::class);
     }
 }

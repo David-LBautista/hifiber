@@ -8,6 +8,7 @@ use App\Models\CatTypeServicePlan;
 use Illuminate\Http\Request;
 
 use App\Models\ServicePlan;
+use Exception;
 
 class ServicesPlansController extends Controller
 {
@@ -20,6 +21,10 @@ class ServicesPlansController extends Controller
             'get_cat_type_service'
         ])->get();
         $title = 'Listado de planes';
+
+        $data->cat_type_services_plan = CatTypeServicePlan::all();
+        $data->cat_type_services = CatTypeService::all();
+        $data->cat_type_equipment = CatTypeEquipment::all();
 
         return view('system.service-plans', compact('data', 'title'));
     }
@@ -38,8 +43,34 @@ class ServicesPlansController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'description' => 'required|string|max:255',
+            'price' => 'required',
+            'color' => 'required',
+            'cat_type_service' => 'required',
+            'cat_type_service_plan' => 'required',
+            'cat_type_equipment' => 'required',
+            'description_short' => 'required|string',
+            'description_long' => 'required|string',
+            'ordering' => 'required'
         ]);
+
+        try {
+            $service_plan = new ServicePlan();
+            $service_plan->cat_type_service = $request->cat_type_service;
+            $service_plan->cat_type_service_plan = $request->cat_type_service_plan;
+            $service_plan->cat_type_equipment = $request->cat_type_equipment;
+            $service_plan->ordering = $request->ordering;
+            $service_plan->slug = str_replace(" ", "-", strtolower($request->name));
+            $service_plan->name = $request->name;
+            $service_plan->price = $request->price;
+            $service_plan->color = $request->color;
+            $service_plan->description_short = $request->description_short;
+            $service_plan->description_long = $request->description_long;
+            $service_plan->save();
+
+            return redirect()->back()->with('success', 'El registro ha sido creado correctamente.');
+        } catch (Exception $e) {
+            return redirect()->back()->with('error', $e->getMessage());
+        }
     }
 
     public function destroy(Request $request, $id)

@@ -13,7 +13,7 @@ class ServicePlan extends Model
 
     public function get_cat_type_equipment()
     {
-        return $this->belongsTo(CatTypeEquipment::class, 'cat_type_service');
+        return $this->belongsTo(CatTypeEquipment::class, 'cat_type_equipment');
     }
 
     public function get_cat_type_service_plan()

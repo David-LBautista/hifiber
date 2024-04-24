@@ -55,3 +55,25 @@ a.menu-link.active {
   color: #f6f6f9;
   background-color: #454460;
 }
+
+.paging_full_numbers {
+  display: flex;
+}
+
+.paging_full_numbers > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.65rem;
+  height: 2.5rem;
+  min-width: 2.5rem;
+  font-weight: 500;
+  font-size: 1.075rem;
+  background: transparent;
+  border: 0;
+  color: var(--kt-text-gray-600) !important;
+}
+
+.ck-editor__editable {
+  min-height: 300px;
+}
