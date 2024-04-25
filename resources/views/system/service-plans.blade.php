@@ -95,13 +95,19 @@
                                         {{ Number::currency($plans->price, in: 'USD') }}
                                     </td>
                                     <td>
-                                        {{ $plans->get_cat_type_service->name }}
+                                        @isset($plans->get_cat_type_service)
+                                            {{ $plans->get_cat_type_service->name }}
+                                        @endisset
                                     </td>
                                     <td>
-                                        {{ $plans->get_cat_type_service_plan->name }}
+                                        @isset($plans->get_cat_type_service_plan)
+                                            {{ $plans->get_cat_type_service_plan->name }}
+                                        @endisset
                                     </td>
                                     <td>
-                                        {{ $plans->get_cat_type_equipment->name }}
+                                        @isset($plans->get_cat_type_equipment)
+                                            {{ $plans->get_cat_type_equipment->name }}
+                                        @endisset
                                     </td>
                                     <td class="text-center">
                                         <div class="btn-group" role="group" aria-label="Button group with nested dropdown"

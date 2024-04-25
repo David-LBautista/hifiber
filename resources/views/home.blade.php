@@ -12,11 +12,11 @@
 
                     <!--begin::Content-->
                     <div class="d-flex flex-column pe-0 pe-sm-10">
-                        <h5 class="mb-1">lorem</h5>
-                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo mollitia
+                        <h5 class="mb-0">Bienvenidos</h5>
+                        {{-- <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo mollitia
                             dolorum accusantium id saepe voluptates, voluptas, doloribus sed
                             necessitatibus numquam laboriosam itaque laborum quis temporibus sint,
-                            deleniti explicabo magnam animi.</span>
+                            deleniti explicabo magnam animi.</span> --}}
                     </div>
                     <!--end::Content-->
 
