@@ -20,7 +20,7 @@
                           {{ $item->name }}
                         </h3>
                         <p class="mt-6 text-base text-gray-500">
-                          {{ $item->description_long }}
+                          {!! $item->description_long !!}
                         </p>
                     </div>
                     <div class="px-6 py-8 text-center bg-gray-50 lg:flex-shrink-0 mr-2 lg:flex lg:flex-col lg:justify-center lg:p-12"
