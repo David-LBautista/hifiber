@@ -151,19 +151,19 @@
                 <div>
                     <p class="text-sm font-bold">COMPAÑIA</p>
                     <p />
-                    <a target="_blank" href="{{ asset('assets/files/terminos_y_condiciones.pdf') }}" class="text-sm font-normal my-2 cursor-pointer block">Aviso de Privacidad</a>
+                    <a target="_blank" href="{{ asset('assets/files/AVISO-DE-PRIVACIDAD.pdf') }}" class="text-sm font-normal my-2 cursor-pointer block">Aviso de Privacidad</a>
+                    <a target="_blank" href="{{ asset('assets/files/terminos_y_condiciones.pdf') }}" class="text-sm font-normal my-2 cursor-pointer block">Términos y condiciones</a>
                 </div>
                 <div>
                     <p class="text-sm font-bold">LEGAL</p>
                     <a target="_blank" href="{{ asset('assets/files/Concesion.pdf') }}" class="text-sm font-normal my-2 cursor-pointer block">Concesión</a>
-                    <a target="_blank" href="{{ asset('assets/files/CODIGO-DE-POLITICAS-DE-GESTION-DE-TRAFICO-SNE.pdf') }}" class="text-sm font-normal my-2 cursor-pointer block">Políticas de gestión de tráfico</a>
+                    <a target="_blank" href="{{ asset('assets/files/CODIGO-DE-POLITICAS-DE-GESTION-DE-TRAFICO-SNE.pdf') }}" class="text-sm font-normal my-2 cursor-pointer block">Codigo de gestion de tráfico.</a>
                     <a target="_blank" href="{{ asset('assets/files/FOLIOS-DE-TARIFAS-REGISTRADAS-IFT.pdf') }}" class="text-sm font-normal my-2 cursor-pointer block">Constancia de cobertura IFT.</a>
-                    {{-- <a class="text-sm font-normal my-2 cursor-pointer block">Código de práctica comercial.</a>
-                    <a class="text-sm font-normal my-2 cursor-pointer block">Contrato PROFECO.</a>
-                    <a class="text-sm font-normal my-2 cursor-pointer block">Carta de derechos minimos.</a>
-                    <a class="text-sm font-normal my-2 cursor-pointer block">Codigo de gestion de tráfico.</a>
+                    <a target="_blank" href="{{ asset('assets/files/CÓDIGO-DE-PRACTICAS-COMERCIALES.pdf') }}" class="text-sm font-normal my-2 cursor-pointer block">Código de práctica comercial.</a>
+                    <a target="_blank" href="{{ asset('assets/files/CONTRATO-DE-ADHESION-PRFECO.pdf') }}" class="text-sm font-normal my-2 cursor-pointer block">Contrato PROFECO.</a>
+                    <a target="_blank" href="{{ asset('assets/files/CARTA-DE-DERECHOS-MINIMOS.pdf') }}" class="text-sm font-normal my-2 cursor-pointer block">Carta de derechos minimos.</a>
+                    <a class="text-sm font-normal my-2 cursor-pointer block">Políticas de gestión de tráfico.</a>
                     <a class="text-sm font-normal my-2 cursor-pointer block">Lineamientos de información.</a>
-                    <a class="text-sm font-normal my-2 cursor-pointer block">Constancia de cobertura IFT.</a> --}}
                 </div>
             </div>
         </div>
