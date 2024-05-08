@@ -14,7 +14,7 @@
         <div style='background-color:rgb(255, 255, 255)' class="mb-20">
             <div class="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8" style="cursor: auto;">
               @foreach ($data->fiber as $item)
-                <div class="max-w-lg mx-auto overflow-hidden rounded-lg shadow-lg lg:max-w-none lg:flex">
+                <div class="max-w-lg mx-auto overflow-hidden rounded-lg shadow-lg lg:max-w-none lg:flex mt-5">
                     <div class="flex-1 px-6 py-8 bg-white lg:p-12" style="cursor: auto;">
                         <h3 class="text-2xl font-extrabold text-gray-900 sm:text-3xl" style="cursor: auto;">
                           {{ $item->name }}
