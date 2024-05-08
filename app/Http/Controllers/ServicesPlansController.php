@@ -29,6 +29,21 @@ class ServicesPlansController extends Controller
         return view('system.service-plans', compact('data', 'title'));
     }
 
+    public function get($id)
+    {
+        $data = ServicePlan::find($id);
+
+        if (!$data) :
+            return response()->json([
+                'message' => "No existe el registro"
+            ], 400);
+        endif;
+
+        return response()->json([
+            "servicesPlans" => $data
+        ], 200);
+    }
+
     public function show()
     {
         $data = (object)[];
@@ -54,7 +69,14 @@ class ServicesPlansController extends Controller
         ]);
 
         try {
-            $service_plan = new ServicePlan();
+            $id = $request->id;
+
+            if (!empty($id)) :
+                $service_plan = ServicePlan::find($id);
+            else :
+                $service_plan = new ServicePlan();
+            endif;
+
             $service_plan->cat_type_service = $request->cat_type_service;
             $service_plan->cat_type_service_plan = $request->cat_type_service_plan;
             $service_plan->cat_type_equipment = $request->cat_type_equipment;

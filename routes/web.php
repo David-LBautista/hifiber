@@ -23,6 +23,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/service_plans', [App\Http\Controllers\ServicesPlansController::class, 'index'])->name('serviceplans');
+Route::get('/service_plans/{id}', [App\Http\Controllers\ServicesPlansController::class, 'get'])->name('serviceplans.get');
 Route::delete('/service_plans/{id}', [App\Http\Controllers\ServicesPlansController::class, 'destroy'])->name('serviceplans.destroy');
 Route::get('/service_plans/new', [App\Http\Controllers\ServicesPlansController::class, 'show'])->name('serviceplans.show');
 Route::post('/service_plans/save', [App\Http\Controllers\ServicesPlansController::class, 'save'])->name('serviceplans.save');
