@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  let form = document.getElementById("contactForm");
+  /*let form = document.getElementById("contactForm");
   form.addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .catch((error) => {
         console.error("Error al enviar la petición:", error);
       });
-  });
+  });*/
 
   AOS.init();
 
