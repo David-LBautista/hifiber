@@ -31,10 +31,9 @@
                             <span class="ml-3 text-xl font-medium text-gray-500">/ mes</span>
                         </div>
                         <div class="mt-6">
-                            <div class="bg-black px-6 py-3 text-white text-xs tracking-widest animation-primary"
-                                onclick="window.location.href='https://wa.me/8131011770'; return false;">
+                            <div class="bg-black px-6 py-3 text-white text-xs tracking-widest animation-primary">
                                 <div class="circle"></div>
-                                <a href="#contacto">OBTENER</a>
+                                <a href="https://api.whatsapp.com/send/?phone=8128766312&text={{ 'Hola, Quiero contratar el servicio FIBRA ÓPTICA '. $item->name. '.' }}">OBTENER</a>
                             </div>
                         </div>
                         <div class="mt-4 text-sm">
