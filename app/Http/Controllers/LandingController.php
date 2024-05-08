@@ -63,5 +63,9 @@ class LandingController extends Controller
         $contact = $request->all();
 
         Mail::to(env('MAIL_CONTACT', 'atencionaclientes@hifiber.com.mx'))->send(new ContactMail($contact));
+
+        session()->flash('success', '¡El mensaje se envió con éxito!');
+
+        return redirect()->back();
     }
 }

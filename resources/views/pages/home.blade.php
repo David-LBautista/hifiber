@@ -1,6 +1,8 @@
 @extends('layouts.app-landing')
 
 @section('content')
+    
+
     <!-- ========= -->
     <!-- banner -->
     <!-- ========= -->
@@ -383,7 +385,6 @@
     <!-- ========= -->
     <!-- ========= -->
     <!-- ========= -->
-
     <!-- ========= -->
     <!-- contacto -->
     <!-- ========= -->
@@ -425,6 +426,18 @@
             </div>
             <div class="col-span-12 md:col-span-12 lg:col-span-6 xl:col-span-6">
                 <div class="isolate bg-white">
+                    @if (session()->has('success'))
+                        <div class="alert alert-success" style="background: #07d915;
+                        padding: 10px;
+                        border-radius: 10px;
+                        color: #fff;
+                        font-weight: bold;
+                        text-align: center;
+                        margin-bottom: 20px;">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+
                     <form id="contactForm" action="{{ route('contact') }}" method="POST" class="">
                         @csrf
                         <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
