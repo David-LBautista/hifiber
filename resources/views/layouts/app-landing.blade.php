@@ -162,7 +162,6 @@
                     <a target="_blank" href="{{ asset('assets/files/codigo-de-practicas-comerciales.pdf') }}" class="text-sm font-normal my-2 cursor-pointer block">Código de práctica comercial.</a>
                     <a target="_blank" href="{{ asset('assets/files/contrato-de-adhesion-profeco.pdf') }}" class="text-sm font-normal my-2 cursor-pointer block">Contrato PROFECO.</a>
                     <a target="_blank" href="{{ asset('assets/files/carta-de-derechos-minimos.pdf') }}" class="text-sm font-normal my-2 cursor-pointer block">Carta de derechos minimos.</a>
-                    <a class="text-sm font-normal my-2 cursor-pointer block">Políticas de gestión de tráfico.</a>
                     <a class="text-sm font-normal my-2 cursor-pointer block">Lineamientos de información.</a>
                 </div>
             </div>
