@@ -112,6 +112,22 @@
                                     <td class="text-center">
                                         <div class="btn-group" role="group" aria-label="Button group with nested dropdown"
                                             data-id="1">
+                                            <button 
+                                                type="button"
+                                                class="btn btn-sm btn-clean btn-icon mr-2 btn-edit"
+                                                data-url="{{ route('serviceplans.get', ['id' => $plans->id ]) }}" 
+                                                title="Editar"
+                                                id="edit-plan"
+                                            >
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                        <rect x="0" y="0" width="24" height="24"/>
+                                                        <path d="M8,17.9148182 L8,5.96685884 C8,5.56391781 8.16211443,5.17792052 8.44982609,4.89581508 L10.965708,2.42895648 C11.5426798,1.86322723 12.4640974,1.85620921 13.0496196,2.41308426 L15.5337377,4.77566479 C15.8314604,5.0588212 16,5.45170806 16,5.86258077 L16,17.9148182 C16,18.7432453 15.3284271,19.4148182 14.5,19.4148182 L9.5,19.4148182 C8.67157288,19.4148182 8,18.7432453 8,17.9148182 Z" fill="currentColor" fill-rule="nonzero" transform="translate(12.000000, 10.707409) rotate(-135.000000) translate(-12.000000, -10.707409) "/>
+                                                        <rect fill="currentColor" opacity="0.3" x="5" y="20" width="15" height="2" rx="1"/>
+                                                    </g>
+                                                </svg>
+                                            </button>
+
                                             <form action="{{ route('serviceplans.destroy', ['id' => $plans->id]) }}"
                                                 method="post">
                                                 @csrf
@@ -164,6 +180,8 @@
             <form action="{{ route('serviceplans.save') }}" method="POST" class="automatic-submit" id="form-plans-services">
                 @csrf
 
+                <input type="hidden" name="id" id="id" value="0">
+
                 <div class="modal-content">
                     <div class="modal-header">
                         <h3 class="modal-title">Plan</h3>
@@ -209,7 +227,7 @@
                         </div>
 
                         <div class="form-group mb-3">
-                            <label class="form-label" for="">Servicio Plan</label>
+                            <label class="form-label" for="">Tipo de Plan</label>
                             <select name="cat_type_service_plan" class="form-select" id="cat_type_service_plan">
                                 <option value="0">Selecciona una opción</option>
                                 @foreach ($data->cat_type_services_plan as $item)
@@ -219,7 +237,7 @@
                         </div>
 
                         <div class="form-group mb-3">
-                            <label class="form-label" for="">Servicio Plan</label>
+                            <label class="form-label" for="">Equipo</label>
                             <select name="cat_type_equipment" class="form-select" id="cat_type_equipment">
                                 <option value="0">Selecciona una opción</option>
                                 @foreach ($data->cat_type_equipment as $item)
@@ -230,7 +248,7 @@
 
                         <div class="form-group mb-3">
                             <label class="form-label" for="description_short">Descripción Corta</label>
-                            <textarea name="description_short" class="form-control" style="min-height: 100px"></textarea>
+                            <textarea name="description_short" id="description_short" class="form-control" style="min-height: 100px"></textarea>
                         </div>
 
                         <div class="form-group mb-3">

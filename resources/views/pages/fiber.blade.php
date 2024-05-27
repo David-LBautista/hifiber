@@ -14,13 +14,13 @@
         <div style='background-color:rgb(255, 255, 255)' class="mb-20">
             <div class="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8" style="cursor: auto;">
               @foreach ($data->fiber as $item)
-                <div class="max-w-lg mx-auto overflow-hidden rounded-lg shadow-lg lg:max-w-none lg:flex">
+                <div class="max-w-lg mx-auto overflow-hidden rounded-lg shadow-lg lg:max-w-none lg:flex mt-5">
                     <div class="flex-1 px-6 py-8 bg-white lg:p-12" style="cursor: auto;">
                         <h3 class="text-2xl font-extrabold text-gray-900 sm:text-3xl" style="cursor: auto;">
                           {{ $item->name }}
                         </h3>
                         <p class="mt-6 text-base text-gray-500">
-                          {{ $item->description_long }}
+                          {!! $item->description_long !!}
                         </p>
                     </div>
                     <div class="px-6 py-8 text-center bg-gray-50 lg:flex-shrink-0 mr-2 lg:flex lg:flex-col lg:justify-center lg:p-12"
@@ -31,10 +31,9 @@
                             <span class="ml-3 text-xl font-medium text-gray-500">/ mes</span>
                         </div>
                         <div class="mt-6">
-                            <div class="bg-black px-6 py-3 text-white text-xs tracking-widest animation-primary"
-                                onclick="window.location.href='https://wa.me/8131011770'; return false;">
+                            <div class="bg-black px-6 py-3 text-white text-xs tracking-widest animation-primary">
                                 <div class="circle"></div>
-                                <a href="#contacto">OBTENER</a>
+                                <a href="https://api.whatsapp.com/send/?phone=8128766312&text={{ 'Hola, Quiero contratar el servicio FIBRA ÓPTICA '. $item->name. '.' }}">OBTENER</a>
                             </div>
                         </div>
                         <div class="mt-4 text-sm">

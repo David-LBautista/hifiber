@@ -1,6 +1,8 @@
 @extends('layouts.app-landing')
 
 @section('content')
+    
+
     <!-- ========= -->
     <!-- banner -->
     <!-- ========= -->
@@ -383,7 +385,6 @@
     <!-- ========= -->
     <!-- ========= -->
     <!-- ========= -->
-
     <!-- ========= -->
     <!-- contacto -->
     <!-- ========= -->
@@ -425,7 +426,20 @@
             </div>
             <div class="col-span-12 md:col-span-12 lg:col-span-6 xl:col-span-6">
                 <div class="isolate bg-white">
-                    <form id="contactForm" action="#" method="POST" class="">
+                    @if (session()->has('success'))
+                        <div class="alert alert-success" style="background: #07d915;
+                        padding: 10px;
+                        border-radius: 10px;
+                        color: #fff;
+                        font-weight: bold;
+                        text-align: center;
+                        margin-bottom: 20px;">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+
+                    <form id="contactForm" action="{{ route('contact') }}" method="POST" class="">
+                        @csrf
                         <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                             <div>
                                 <label for="first-name"
@@ -469,11 +483,9 @@
                             </div>
                         </div>
                         <div class="lg:flex lg:flex-1 lg:justify-start mt-5">
-                            <button class="bg-black px-6 py-3 text-white animation-primary w-full text-center">
+                            <button type="submit" class="bg-black px-6 py-3 text-white animation-primary w-full text-center">
                                 <div class="circle"></div>
-                                <a href="#" class="flex items-center justify-center">
-                                    <p class="mr-2 text-xs tracking-widest">ENVIAR</p>
-                                </a>
+                                <p class="mr-2 text-xs tracking-widest">ENVIAR</p>
                             </button>
                         </div>
                     </form>

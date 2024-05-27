@@ -3,8 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 use App\Models\ServicePlan;
+use App\Mail\ContactMail;
+
 
 class LandingController extends Controller
 {
@@ -53,5 +56,16 @@ class LandingController extends Controller
         })->get();
 
         return view('pages.fiber', compact('data'));
+    }
+
+    public function contact(Request $request)
+    {
+        $contact = $request->all();
+
+        Mail::to(env('MAIL_CONTACT', 'atencionaclientes@hifiber.com.mx'))->send(new ContactMail($contact));
+
+        session()->flash('success', '¡El mensaje se envió con éxito!');
+
+        return redirect()->back();
     }
 }
